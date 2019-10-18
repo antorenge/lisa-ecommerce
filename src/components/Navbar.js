@@ -33,9 +33,9 @@ class Navbar extends React.Component {
                 <div className="header-cart-4 furits-cart">
                   <a className="icon-cart" href="#">
                     <i className="pe-7s-shopbag"></i>
-                    <span className="handicraft-count">02</span>
+                    <span className="handicraft-count">{this.props.cart.length}</span>
                   </a>
-                  <Cart />
+                  <Cart cart={this.props.cart} removeFromCart={this.props.removeFromCart} />
                 </div>
               </div>
             </div>
